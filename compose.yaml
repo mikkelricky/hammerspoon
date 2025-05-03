@@ -1,0 +1,7 @@
+services:
+  stylua:
+    # https://github.com/JohnnyMorganz/StyLua
+    image: johnnymorganz/stylua
+    volumes:
+      - ./:/app
+    working_dir: /app

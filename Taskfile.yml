@@ -1,0 +1,49 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  lint:lua:
+    desc: "Lint Lua code"
+    cmds:
+      # https://github.com/oxsecurity/megalinter?tab=readme-ov-file#docker-container
+      - docker run --rm --volume $PWD:/tmp/lint oxsecurity/megalinter-only-lua_selene
+    # silent: true
+
+  spoons:docs:update:
+    desc: "Update docs for Spoons"
+    cmds:
+      - |
+          for f in $(find Spoons/*.spoon/ -name init.lua); do
+            cd $(dirname "$f")
+            # https://github.com/Hammerspoon/hammerspoon/blob/master/SPOONS.md#documentation
+            hs -c "hs.doc.builder.genJSON(\"$(pwd)\")" | grep -v "^--" > docs.json
+          done
+
+  coding-standards:lua:apply:
+    cmds:
+      - docker compose run --rm stylua /stylua Spoons
+
+  coding-standards:lua:check:
+    cmds:
+      - task: coding-standards:lua:apply
+      - docker compose run --rm stylua /stylua Spoons --check
+
+  coding-standards:markdown:check:
+    cmds:
+      # https://github.com/oxsecurity/megalinter?tab=readme-ov-file#docker-container
+      - docker run --rm --volume $PWD:/tmp/lint oxsecurity/megalinter-only-markdown_markdownlint
+    # silent: true
+
+  build:
+    cmds:
+      - task: coding-standards:lua:check
+      - task: coding-standards:markdown:check
+      - task: spoons:docs:update
+      - |
+          for f in $(find Spoons/*.spoon/ -name init.lua); do
+            name=$(basename $(dirname "$f"))
+            dir=$(dirname $(dirname "$f"))
+            cd "$dir"
+            zip -r "$name.zip" "$name"
+          done

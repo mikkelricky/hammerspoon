@@ -1,0 +1,17 @@
+# https://kampfkarren.github.io/selene/usage/std.html
+
+# https://kampfkarren.github.io/selene/usage/std.html#lua_versions
+base: lua53
+name: hammerspoon
+
+# lua_versions:
+#   - lua53
+
+# https://kampfkarren.github.io/selene/usage/std.html#global
+globals:
+  hs.execute:
+    args:
+      - type: string
+
+  hs:
+    any: true

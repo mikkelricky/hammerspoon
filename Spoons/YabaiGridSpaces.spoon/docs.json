@@ -1,0 +1,175 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "desc" : "Yabai Grid Spaces spoon.",
+    "Constructor" : [
+
+    ],
+    "doc" : "Yabai Grid Spaces spoon.\n\nDownload: <http:\/\/github.com\/mikkelricky\/hammerspoon\/raw\/main\/Spoons\/YabaiGridSpaces.spoon.zip>",
+    "Method" : [
+      {
+        "doc" : "Binds hotkeys for YabaiGridSpaces\n\nParameters:\n * config - A table containing config:\n  * reloadConfiguration - This will cause the configuration to be reloaded",
+        "stripped_doc" : [
+          "Binds hotkeys for YabaiGridSpaces",
+          ""
+        ],
+        "def" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "name" : "bindHotkeys",
+        "notes" : [
+
+        ],
+        "signature" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Binds hotkeys for YabaiGridSpaces",
+        "parameters" : [
+          " * config - A table containing config:",
+          "  * reloadConfiguration - This will cause the configuration to be reloaded"
+        ]
+      },
+      {
+        "doc" : "Binds hotkeys for YabaiGridSpaces\n\nParameters:\n * mapping - A table containing hotkey modifier\/key details for the following items:\n  * navigateNorth -\n  * navigateEast -\n  * navigateSouth -\n  * navigateWest -",
+        "stripped_doc" : [
+          "Binds hotkeys for YabaiGridSpaces",
+          ""
+        ],
+        "def" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "name" : "bindHotkeys",
+        "notes" : [
+
+        ],
+        "signature" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Binds hotkeys for YabaiGridSpaces",
+        "parameters" : [
+          " * mapping - A table containing hotkey modifier\/key details for the following items:",
+          "  * navigateNorth -",
+          "  * navigateEast -",
+          "  * navigateSouth -",
+          "  * navigateWest -"
+        ]
+      },
+      {
+        "doc" : "Start YabaiGridSpaces\n\nParameters:\n * None",
+        "stripped_doc" : [
+          "Start YabaiGridSpaces",
+          ""
+        ],
+        "def" : "YabaiGridSpaces:start()",
+        "name" : "start",
+        "notes" : [
+
+        ],
+        "signature" : "YabaiGridSpaces:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Start YabaiGridSpaces",
+        "parameters" : [
+          " * None"
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Binds hotkeys for YabaiGridSpaces\n\nParameters:\n * config - A table containing config:\n  * reloadConfiguration - This will cause the configuration to be reloaded",
+        "stripped_doc" : [
+          "Binds hotkeys for YabaiGridSpaces",
+          ""
+        ],
+        "def" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "name" : "bindHotkeys",
+        "notes" : [
+
+        ],
+        "signature" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Binds hotkeys for YabaiGridSpaces",
+        "parameters" : [
+          " * config - A table containing config:",
+          "  * reloadConfiguration - This will cause the configuration to be reloaded"
+        ]
+      },
+      {
+        "doc" : "Binds hotkeys for YabaiGridSpaces\n\nParameters:\n * mapping - A table containing hotkey modifier\/key details for the following items:\n  * navigateNorth -\n  * navigateEast -\n  * navigateSouth -\n  * navigateWest -",
+        "stripped_doc" : [
+          "Binds hotkeys for YabaiGridSpaces",
+          ""
+        ],
+        "def" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "name" : "bindHotkeys",
+        "notes" : [
+
+        ],
+        "signature" : "YabaiGridSpaces:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Binds hotkeys for YabaiGridSpaces",
+        "parameters" : [
+          " * mapping - A table containing hotkey modifier\/key details for the following items:",
+          "  * navigateNorth -",
+          "  * navigateEast -",
+          "  * navigateSouth -",
+          "  * navigateWest -"
+        ]
+      },
+      {
+        "doc" : "Start YabaiGridSpaces\n\nParameters:\n * None",
+        "stripped_doc" : [
+          "Start YabaiGridSpaces",
+          ""
+        ],
+        "def" : "YabaiGridSpaces:start()",
+        "name" : "start",
+        "notes" : [
+
+        ],
+        "signature" : "YabaiGridSpaces:start()",
+        "type" : "Method",
+        "returns" : [
+
+        ],
+        "desc" : "Start YabaiGridSpaces",
+        "parameters" : [
+          " * None"
+        ]
+      }
+    ],
+    "Field" : [
+
+    ],
+    "name" : "YabaiGridSpaces"
+  }
+]

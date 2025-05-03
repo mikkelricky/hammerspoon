@@ -1,0 +1,6 @@
+# https://github.com/igorshubovych/markdownlint-cli?tab=readme-ov-file#ignoring-files
+megalinter-reports/
+
+# Local Variables:
+# mode: gitignore
+# End:

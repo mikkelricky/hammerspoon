@@ -1,0 +1,3 @@
+# https://kampfkarren.github.io/selene/usage/configuration.html
+# https://kampfkarren.github.io/selene/usage/configuration.html#setting-the-standard-library
+std = "hammerspoon"

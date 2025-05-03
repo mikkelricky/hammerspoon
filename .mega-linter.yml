@@ -1,0 +1,5 @@
+# https://github.com/oxsecurity/megalinter?tab=readme-ov-file#configuration
+APPLY_FIXES: all
+
+# https://github.com/oxsecurity/megalinter/blob/main/docs/descriptors/markdown_markdownlint.md#configuration-in-megalinter
+MARKDOWN_MARKDOWNLINT_CONFIG_FILE: LINTER_DEFAULT
